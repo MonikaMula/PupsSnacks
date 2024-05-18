@@ -1,6 +1,48 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block page_header %}
+    <div class="container-fluid pt-3 pb-1">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Welcome to Vuppies Veggie Paws Snacks</h1>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
 {% block content %}
-    <h1 class="display-4 text-success">YAYYYY</h1>
+    <div class="container main-content">
+        <div class="row align-items-center">
+            <!-- Main tagline and action buttons -->
+            <div class="col-12 col-md-6 text-center text-md-left">
+                <h2 class="display-4">Sustainable Treats for Your Furry Family Friends</h2>
+                <p class="lead">Discover our range of vegetarian treats that keep your dog healthy and tail-waggingly happy. Now with a special gift in every order!</p>
+                <div class="button-group mt-4">
+                    <a href="{% url 'products' %}" class="btn btn-primary btn-lg">Shop Now</a>
+                    <a href="{% url 'about' %}" class="btn btn-secondary btn-lg">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h3>About Vuppies Veggie Paws Snacks</h3>
+                <p>Vuppies Veggie Paws Snacks began as a small initiative during a global pause. Vuppies name come from family friends child callin or dogs Vuppies. As pet lovers, we recognized the need for sustainable, healthy treats and decided to act on it. Our products are sourced responsibly and crafted with care to ensure the highest quality.</p>
+                <p>We invite you to join our journey towards pet care by exploring our products or learning more about our mission and values.</p>
+        </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h3>Free Gift With Every Purchase!</h3>
+                <p>For a limited time, every order comes with a free wood stick—perfect for playtime or training. It's our way of saying thank you for supporting sustainable pet care.</p>
+            </div>
+        </div>
+    </section>
 {% endblock %}
