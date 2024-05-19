@@ -1,0 +1,1 @@
+web: gunicorn vuppies_snacks.wsgi:application
